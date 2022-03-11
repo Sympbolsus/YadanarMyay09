@@ -15,7 +15,7 @@ body{
 .title{
     width: 100%;
     height: 100vh;
-    background-image: url(photos/Artboard\ 10.png);
+    background-image: url(home/photos/Artboard\ 10.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,7 +281,7 @@ body{
 
  }
 .nightmode .title{
-    background-image: url(photos/Artboard\ 20.png);
+    background-image: url(home/photos/Artboard\ 20.png);
     transition:0.5s;
 }
 .nightmode .line{
