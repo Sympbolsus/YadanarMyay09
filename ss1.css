@@ -1,0 +1,107 @@
+.title{
+    background-color: rgb(50, 64, 85);
+    background-image: none;
+}
+.imgsize{
+    width: 250px;
+}
+/* .imgcon{
+    width: 600px;
+    height: 350px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+} */
+.single-pp{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    position: relative;
+    bottom: 65px;
+    left: 30px;
+    margin-bottom: 10px;
+
+}
+.text p{
+    color: rgb(216, 216, 216);
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.text p:first-child{
+    margin-bottom: 30px;
+}
+.text p:last-child{
+   position: relative;
+   top: 10px;
+}
+.text h1{
+    font-size: 30px;
+    color: rgb(0, 140, 255);
+    text-shadow: 0 0 10px rgb(47, 56, 68);
+    margin: 0;
+    border-bottom: 2px solid rgb(0, 195, 255);
+}
+.sel{
+    position: relative;
+    left: -80px;
+    bottom: -20px;
+}
+.sel p{
+   position: relative;
+   top: 20px;
+   color: rgb(255, 255, 255);
+}
+.opp{
+    width: 60px;
+    
+}
+.btncart{
+    background-color: rgb(0, 102, 255);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+    border: none;
+}
+.moreimg{
+    width: 200px;
+}
+.btncart:hover{
+   background-color: rgb(0, 140, 255);
+   transition: 0.5s;
+}
+.dart{
+    position: relative;
+    top: 100px;
+    right: 140px;
+}
+.detail{
+    width: 300px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.detail h5{
+    color: rgb(0, 162, 255);
+}
+.detail p{
+    color: rgb(206, 206, 206);
+}
+.nightmode .title{
+    background-color: rgb(0, 255, 149);
+    background-image: none;
+}
+.nightmode p{
+    color: rgb(47, 56, 68);
+}
+
+.nightmode h5{
+    color: rgb(26, 0, 97);
+}
+.nightmode h1{
+    color: rgb(0, 46, 114);
+    text-shadow: none;
+}

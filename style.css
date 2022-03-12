@@ -113,7 +113,7 @@ body{
     position: relative;
     height: 300px;
 }
-.darkmode i{
+.darkmode .darkk{
     font-size: 35px;
     color: rgb(0, 6, 61);
     box-shadow: 0 0 10px rgb(0, 6, 61);
@@ -241,6 +241,12 @@ body{
     font-size: 20px;
     color: rgb(202, 202, 202,0.8);
 }
+.carousel-inner{
+    height: 400px;
+}
+.d-block{
+    height: 400px;
+}
 .center-box {
     width: 300px;
     position: relative;
@@ -296,19 +302,55 @@ body{
     color: #fff;
 }
 .nightmode .contact{
-    background-color: rgb(0, 124, 108);
+    background-color: rgb(51 131 187);
     transition: 0.5s;
 }
+.nightmode .aa h4{
+    color: black;
+}
+.nightmode .aa p{
+    color: black;
+}
+
 .aa{
-    margin-top: 50px !important;
+    margin-top: 50px;
     flex-basis: 25%;
     min-width: 200px;
-    margin-left: 20px auto;
+    margin-left: 20px;
 }
 .aa h4{
+    font-size: 15px;
     color: rgb(216, 235, 245);
     font-family: 'Barlow Semi Condensed', sans-serif;
     margin: 0;
+}
+.shop{
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+}
+.shop p{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Fredoka', sans-serif;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.nightmode .shop p{
+    color: black;
+    text-shadow: 0 0 10px rgb(197, 197, 197);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.shop i{
+    font-size: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.shop i:hover{
+    color: rgb(0, 153, 255);
+    transition: 1s;
 }
 .aa img{
     min-height: 200px;
@@ -334,6 +376,7 @@ body{
     margin-top: 50px;
     align-items: center;
     text-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-left: 10px auto;
 }
 .hh1 i{
     font-size: 50px;
