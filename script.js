@@ -12,14 +12,13 @@ dark.addEventListener("click",() =>{
   dark.classList.toggle("fa-sun");
 });
 
-myFunction();
-function myFunction() {
+function ddd() {
   myVar = setTimeout(showPage, 3000);
 };
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("lee").style.display = "block";
+  document.getElementsByClassName("plane-con")[0].style.display = "none";
+  document.getElementById("lool").style.display = "block";
 };
 
 wow = new WOW(
