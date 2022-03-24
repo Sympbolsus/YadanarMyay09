@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Festive&family=Lato:ital,wght@1,300&family=PT+Serif:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./home/vendor/slick/slick.css">
+    <link rel="stylesheet" href="./home/vendor/slick/slick-theme.css">
+
 </head>
 <body>
+  <div id="loader"></div>
+  <div style="display:none;"  id="lee" class="">
     <section class="aaa" id="1">
         
         <div class="setting">
@@ -93,18 +98,14 @@
        
     </div>
     </section>
+  
     <section class="contact" id="2">
 
         <div class="container ">
             <div class="row">
                 <div class="col-12">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner mw-1000">
+                        <div class="carousel-inner w-100">
                           <div class="carousel-item active" data-bs-interval="3000">
                             <img src="home/photos/ef50809c-1d71-4c18-841e-4b6d97994e26_1.jpg" class="d-block w-100" alt="...">
                           </div>
@@ -131,7 +132,7 @@
           <h2>POPULAR NOW</h2>
           <i class="fa-solid fa-fire"></i>
         </div>
-       <div class="colume">
+       <div class="colume slide">
          <div class="aa wow animate__bounceInUp">
            <a href="buy.html"><img src="home/photos/images (8).jpg" alt="" class="medicine"></a>
            <h4>Biogesic</h4>
@@ -145,7 +146,7 @@
          </div>
          <p>$50.00</p>
          </div>
-         <div class="aa wow animate__bounceInUp">
+         <div class=" aa wow animate__bounceInUp">
           <a href="buy.html"><img src="home/photos/images (10).jpg" alt="" class="medicine"></a>
           <h4>Biogesic Kid</h4>
         
@@ -158,7 +159,7 @@
         </div>
         <p>$45.00</p>
         </div>
-        <div class="aa wow animate__bounceInUp">
+        <div class=" aa wow animate__bounceInUp">
           <a href="buy.html"><img src="home/photos/images (11).jpg" alt="" class="medicine"></a>
           <h4>WOOD</h4>
         
@@ -171,7 +172,7 @@
         </div>
         <p>$68.00</p>
         </div>
-        <div class="aa wow animate__bounceInUp">
+        <div class=" aa wow animate__bounceInUp">
           <a href="buy.html"><img src="home/photos/bb2.jpg" alt="" class="medicine"></a>
           <h4>Decolgen</h4>
         
@@ -184,10 +185,8 @@
         </div>
         <p>$35.00</p>
         </div>
-        
-       </div>
-       <div class="colume">
-        <div class="aa wow animate__bounceInUp">
+
+        <div class=" aa wow animate__bounceInUp">
           <img src="home/photos/images (8).jpg" alt="" class="medicine">
           <h4>Biogesic</h4>
         
@@ -239,13 +238,19 @@
        </div>
        <p>$35.00</p>
        </div>
+        
+       </div>
        
-      </div>
+       
+      
 
     </section>
-    <script src="home/vendor/wow/wow.js"></script>
+  </div>
     <script src="js/jquery.js"></script>
+    <script src="home/vendor/wow/wow.js"></script>
+    <script src="./home/vendor/slick/slick.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>

@@ -12,6 +12,16 @@ dark.addEventListener("click",() =>{
   dark.classList.toggle("fa-sun");
 });
 
+myFunction();
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+};
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("lee").style.display = "block";
+};
+
 wow = new WOW(
   {
   boxClass:     'wow',      // default
@@ -48,8 +58,18 @@ bio[i].addEventListener("mouseleave", () =>{
 }
 
 
+  $('.slide').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
 
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   });
+
+  var myVar;
+
+
+
