@@ -13,12 +13,13 @@ dark.addEventListener("click",() =>{
 });
 
 function ddd() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 1000);
 };
 
 function showPage() {
   document.getElementsByClassName("plane-con")[0].style.display = "none";
   document.getElementById("lool").style.display = "block";
+  document.getElementsByClassName("contact")[0].style.display = "block";
 };
 
 wow = new WOW(
@@ -58,9 +59,39 @@ bio[i].addEventListener("mouseleave", () =>{
 
 
   $('.slide').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
   });
 
 
@@ -71,4 +102,12 @@ $(function () {
   var myVar;
 
 
-
+  const input = document.getElementById("search-input");
+  const searchBtn = document.getElementById("search-btn");
+  
+  const expand = () => {
+    searchBtn.classList.toggle("close");
+    input.classList.toggle("square");
+  };
+  
+  searchBtn.addEventListener("click", expand);

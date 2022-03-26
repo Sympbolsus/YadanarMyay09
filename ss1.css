@@ -4,6 +4,7 @@
 }
 .imgsize{
     width: 250px;
+    box-shadow: 0 0 10px solid black;
 }
 /* .imgcon{
     width: 600px;
@@ -66,7 +67,8 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: bold;
     transition: 0.5s;
-    border: none;
+    border-top-left-radius: 3px solid rgb(26, 0, 97);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .moreimg{
     width: 200px;
