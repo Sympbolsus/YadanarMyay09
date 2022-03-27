@@ -11,7 +11,7 @@ dark.addEventListener("click",() =>{
   document.body.classList.toggle("nightmode");
   dark.classList.toggle("fa-sun");
 });
-
+ddd();
 function ddd() {
   myVar = setTimeout(showPage, 1000);
 };
@@ -102,12 +102,39 @@ $(function () {
   var myVar;
 
 
-  const input = document.getElementById("search-input");
-  const searchBtn = document.getElementById("search-btn");
+ 
   
-  const expand = () => {
-    searchBtn.classList.toggle("close");
-    input.classList.toggle("square");
-  };
-  
-  searchBtn.addEventListener("click", expand);
+
+
+ let menuu = document.getElementsByClassName("menu")[0];
+
+ menuu.addEventListener("click", () => {
+   document.getElementsByClassName("header")[0].style.display = "flex";
+ })
+
+ $(".card").click(function () {
+   $(".p-9").slideToggle(1000);
+ })
+ window.addEventListener('mousemove', handleMouseMove);
+window.addEventListener('resize', handleWindowResize);
+
+const spansSlow = document.querySelectorAll('.spanSlow');
+const spansFast = document.querySelectorAll('.spanFast');
+
+let width = window.innerWidth;
+
+function handleMouseMove(e) {
+  let normalizedPosition = e.pageX / (width/2) - 1;
+  let speedSlow = 100 * normalizedPosition;
+  let speedFast = 200 * normalizedPosition;
+  spansSlow.forEach((span) => {
+    span.style.transform = `translate(${speedSlow}px)`;
+  });
+  spansFast.forEach((span) => {
+    span.style.transform = `translate(${speedFast}px)`
+  })
+}
+//we need to recalculate width when the window is resized
+function handleWindowResize() {
+  width = window.innerWidth;
+}
