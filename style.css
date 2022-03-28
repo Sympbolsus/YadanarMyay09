@@ -178,7 +178,7 @@ body{
 .active{
     color: rgb(0, 153, 255) !important;
     border-color: rgb(0, 153, 255) !important;
-    border-right: 5px solid rgb(0, 153, 255) !important;
+    border-right: 5px solid rgb(255, 102, 0) !important;
 }
 .setting{
     position: absolute;
@@ -186,6 +186,10 @@ body{
     display: flex;
     justify-content: flex-end;
     z-index: 0;
+}
+.nnn{
+  display: flex;
+  flex-direction: column;
 }
 .fa-cog{
     cursor: pointer;
@@ -269,23 +273,46 @@ body{
 background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
 
 }
+.s3{
+  background-color: #c8c8c8;
+background-image: linear-gradient(160deg, #c8c8c8 0%, #9e9e9e 100%);
+
+}
+.row{
+  display: flex;
+
+}
+
 .card{
     background: none !important;
     border: none !important;
-    border-radius: 25px;
-    margin: 10px auto;
-    padding: 10px;
     box-shadow: -10px -10px 10px rgba(225,225,225,0.2),
-                10px 10px 10px rgba(0,0,0,0.1);
+                 10px 10px 10px rgba(0,0,0,0.1);
+}
+.casd{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 25px;
 }
 .p-9{
     display: none;
 }
+.kl img{
+  width: 40px;
+}
+.ov-img{
+
+  margin-left: -25px
+
+}
 .card:hover{
-  background-color: rgb(0, 0, 0, 0.1) !important;
+  background-color: rgb(0, 0, 0, 0.05) !important;
   cursor: pointer;
 }
-.card-body{
+.cast{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,9 +325,14 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
 }
 .s3{
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
+}
+.nn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
@@ -324,6 +356,9 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.ggg{
+  display: flex;
 }
 .container9 .box .title-9 {
   width: 100%;
@@ -387,11 +422,15 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
   animation-delay: 2s;
   display: flex;
 }
+.shopimg{
+  width: 50px;
+  height: 50px;
+}
 .container9 .box .role p {
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
   opacity: 0;
-  font-weight: 400;
+  font-weight: 900;
   font-family: "Lato";
   color: #ffffff;
   font-size: 16px;
@@ -647,6 +686,11 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
   right: 0;
   bottom: 0;
 }
+.concon{
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+}
 .container00 .search {
   position: absolute;
   margin: auto;
@@ -751,7 +795,14 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
 }
 .p4{
     display: none;
+    justify-content: center;
+    width: 100%;
 }
+.row{
+  display: flex;
+
+}
+
 @media screen and (max-width: 670px) {
 
     .title-2{
@@ -819,6 +870,11 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.marmid{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .line1 {
   stroke-dasharray: 60 207;
   stroke-width: 6;
@@ -848,11 +904,10 @@ background-image: linear-gradient(160deg, #026aa9 0%, #80D0C7 100%);
 }
 .header{
     position: fixed;
+    width: 690px;
+    justify-content: center;
+}
 
-}
-body{
-    max-width: 600px;
-}
 
 
   }

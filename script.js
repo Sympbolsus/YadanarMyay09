@@ -112,7 +112,7 @@ $(function () {
    document.getElementsByClassName("header")[0].style.display = "flex";
  })
 
- $(".card").click(function () {
+ $(".casd").click(function () {
    $(".p-9").slideToggle(1000);
  })
  window.addEventListener('mousemove', handleMouseMove);
@@ -138,3 +138,142 @@ function handleMouseMove(e) {
 function handleWindowResize() {
   width = window.innerWidth;
 }
+$(".counter-up").counterUp({
+  delay: 10,
+  time:1000
+});
+
+function go(url) {
+  location.href = `${url}`;
+}
+
+let dataArr = ['apr 12','apr 14','apr 18','api 21','api 28','api 4','api 2','api 25','api 26','api 9','api 29'];
+let orderCountArr = [7,5,6,4,6,4,8,6,8,9,6];
+let viewrArr = [13,12,15,14,20,25,19,22,39,27,10];
+
+let ctx = document.getElementById('oo').getContext('2d');
+let myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dataArr,
+        datasets: [{
+            
+            label: 'Order Count',
+            data: orderCountArr,
+            backgroundColor: [
+                'rgba(0, 153, 255, 0.2)',
+           
+            ],
+            borderColor: [
+                '#17a2b8',
+               
+            ],
+            borderWidth: 1,
+            tension:0
+        },
+        {
+            
+          label: 'Viewer Count',
+          data: viewrArr,
+          backgroundColor: [
+              'rgba(255, 102, 0, 0.15) ',
+         
+          ],
+          borderColor: [
+              'rgb(255, 102, 0) ',
+             
+          ],
+          borderWidth: 1,
+          tension:0
+      }]
+    },
+    options: {
+        scales: {
+            y: {
+                display:false,
+                beginAtZero: true
+            }
+        },
+        legend:{
+
+          display: true,
+          position: 'top',
+          labels:{
+            fontColor: '#333',
+          }
+
+        }
+    }
+});
+
+let Places = ['Kayah','Loikaw','Mandalay','Yangon','Shan'];
+let orderPlaces =[5,15,4,9,7];
+
+let ctx2 = document.getElementById('ollo').getContext('2d');
+let myChart2 = new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+        labels: Places,
+        datasets: [{
+            
+            label: 'Order Count',
+            data: orderPlaces,
+            backgroundColor: [
+                'rgba(0, 153, 255, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+           
+            ],
+            borderColor: [
+                '#17a2b8',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 136, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+               
+            ],
+            borderWidth: 1,
+            tension:0
+        },
+        {
+            
+          label: 'Viewer Count',
+          data: orderPlaces,
+          backgroundColor: [
+              'rgba(255, 102, 0, 0.15) ',
+         
+          ],
+          borderColor: [
+              'rgb(255, 102, 0) ',
+             
+          ],
+          borderWidth: 1,
+          tension:0
+      }]
+    },
+    options: {
+        scales: {
+            y: {
+                display:false,
+                beginAtZero: true
+            }
+        },
+        legend:{
+
+          display: true,
+          position: 'top',
+          labels:{
+            fontColor: '#333',
+          }
+
+        }
+    }
+});
+
+
+
+
