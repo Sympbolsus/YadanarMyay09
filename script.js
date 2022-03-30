@@ -74,15 +74,9 @@ bio[i].addEventListener("mouseleave", () =>{
         dots: true
       }
     },
+    
     {
       breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -117,7 +111,7 @@ $(function () {
  $(".casd").click(function () {
    $(".p-9").slideToggle(1000);
  })
- 
+
  window.addEventListener('mousemove', handleMouseMove);
 window.addEventListener('resize', handleWindowResize);
 
