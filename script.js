@@ -109,12 +109,15 @@ $(function () {
  let menuu = document.getElementsByClassName("menu")[0];
 
  menuu.addEventListener("click", () => {
-   document.getElementsByClassName("header")[0].style.display = "flex";
+
+  document.getElementsByClassName("header")[0].style.display = "flex";
  })
+
 
  $(".casd").click(function () {
    $(".p-9").slideToggle(1000);
  })
+ 
  window.addEventListener('mousemove', handleMouseMove);
 window.addEventListener('resize', handleWindowResize);
 
@@ -219,21 +222,16 @@ let myChart2 = new Chart(ctx2, {
             label: 'Order Count',
             data: orderPlaces,
             backgroundColor: [
-                'rgba(0, 153, 255, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+              
            
             ],
             borderColor: [
                 '#17a2b8',
                 'rgba(54, 162, 235, 1)',
-                'rgba(255, 136, 86, 1)',
+                '#0dcaf0',
                 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                '#dc3545)',
+                '#198754'
                
             ],
             borderWidth: 1,
@@ -268,11 +266,17 @@ let myChart2 = new Chart(ctx2, {
           position: 'top',
           labels:{
             fontColor: '#333',
+            
           }
 
         }
     }
 });
+
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
 
 
 
