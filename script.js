@@ -104,7 +104,7 @@ $(function () {
 
  menuu.addEventListener("click", () => {
 
-  document.getElementsByClassName("header")[0].style.display = "flex";
+  document.getElementsByClassName("header")[0].classList.toggle("off");
  })
 
 
