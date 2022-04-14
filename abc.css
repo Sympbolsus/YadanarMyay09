@@ -1,0 +1,27 @@
+.title{
+    background-image: none;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #628674; 
+    background-image: none;
+    height: 100vh;
+    transition: 0.5s;
+}
+.nightmode .title{
+     background: #654ea3;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #b795c7, #aba5bd);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #c4aab0, #aba5bd);
+    transition: 0.5s;
+}
+.card-bg{
+    background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #bdbdbd);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #afafaf, #bdbdbd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+a{
+    text-decoration: none;
+}
+.active{
+    border: none;
+}
+

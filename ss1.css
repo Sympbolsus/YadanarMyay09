@@ -1,24 +1,53 @@
 .title{
-    background-color: rgb(50, 64, 85);
-    background-image: none;
+    background: rgb(93,201,255);
+    background: linear-gradient(90deg, rgba(93,201,255,1) 0%, rgba(9,92,121,1) 43%, rgba(0,50,60,1) 100%);
+}
+.nightmode .title{
+    background: rgb(0,24,36);
+background: linear-gradient(90deg, rgba(0,24,36,1) 0%, rgba(9,92,121,1) 30%, rgba(0,212,255,1) 100%);
 }
 .imgsize{
     width: 250px;
     box-shadow: 0 0 10px solid black;
 }
-/* .imgcon{
-    width: 600px;
-    height: 350px;
-    align-items: flex-end;
-    display: flex;
-    justify-content: flex-end;
-} */
-.single-pp{
+.single{
+    height: 300vh;
+}
+.vv{
+    margin-top: 80px;
+}
+.slick-prev:before {
+    display: none;
+}
+
+
+.title{
+    height: 300vh;
+}
+.detail{
+    width: 300px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.detail h5{
+    color: rgb(0, 162, 255);
+}
+.detail p{
+    color: rgb(206, 206, 206);
+}
+.text-white h1{
+    color: rgb(0, 140, 255);
+    text-shadow: 0 0 10px rgb(47, 56, 68);
+    margin: 0;
+    border-bottom: 2px solid rgb(0, 195, 255);
+}
+
+/* .single-pp{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 .text{
     position: relative;
@@ -106,4 +135,4 @@
 .nightmode h1{
     color: rgb(0, 46, 114);
     text-shadow: none;
-}
+}  */

@@ -7,6 +7,9 @@ let body1 = document.getElementsByTagName("body");
 let bio = document.querySelectorAll(".medicine");
 let buynow = document.querySelectorAll(".aa img");
 
+
+
+
 dark.addEventListener("click",() =>{
   document.body.classList.toggle("nightmode");
   dark.classList.toggle("fa-sun");
@@ -19,7 +22,6 @@ function ddd() {
 function showPage() {
   document.getElementsByClassName("plane-con")[0].style.display = "none";
   document.getElementById("lool").style.display = "block";
-  document.getElementsByClassName("contact")[0].style.display = "block";
 };
 
 wow = new WOW(
