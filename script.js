@@ -7,7 +7,9 @@ let body1 = document.getElementsByTagName("body");
 let bio = document.querySelectorAll(".medicine");
 let buynow = document.querySelectorAll(".aa img");
 
-
+$('.cart-icn').click(function () {
+  $('.shop-area').toggle();
+  });
 
 
 dark.addEventListener("click",() =>{
@@ -35,32 +37,62 @@ wow = new WOW(
 )
 wow.init();
 
-photoarr1 = [
-  "home/photos/images (8).jpg",
-  "home/photos/images (10).jpg",
-  "home/photos/images (11).jpg",
-  "home/photos/bb2.jpg",
-];
+// photoarr1 = [
+//   "home/photos/images (8).jpg",
+//   "home/photos/images (10).jpg",
+//   "home/photos/images (11).jpg",
+//   "home/photos/bb2.jpg",
+// ];
 
-photoarr = [
-  "home/photos/bb1.jpg",
-  "home/photos/images (15).jpg",
-  "home/photos/images (12).jpg",
-  "home/photos/images (16).jpg",
-];
+// photoarr = [
+//   "home/photos/bb1.jpg",
+//   "home/photos/images (15).jpg",
+//   "home/photos/images (12).jpg",
+//   "home/photos/images (16).jpg",
+// ];
 
-for(let i=0;i<photoarr.length;i++){
-  bio[i].addEventListener("mouseover", () =>{
-  bio[i].src = photoarr[i];
-});
-bio[i].addEventListener("mouseleave", () =>{
-  bio[i].src = photoarr1[i];
-});
+// for(let i=0;i<photoarr.length;i++){
+//   bio[i].addEventListener("mouseover", () =>{
+//   bio[i].src = photoarr[i];
+// });
+// bio[i].addEventListener("mouseleave", () =>{
+//   bio[i].src = photoarr1[i];
+// });
 
-}
+// }
 
 
   $('.slide').slick({
+    dots: true,
+  infinite: false,
+  speed: 600,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+
+  $('.vvpp').slick({
     dots: true,
   infinite: false,
   speed: 600,
@@ -89,6 +121,7 @@ bio[i].addEventListener("mouseleave", () =>{
     // instead of a settings object
   ]
   });
+
 
 
 $(function () {
@@ -269,10 +302,180 @@ let myChart2 = new Chart(ctx2, {
     }
 });
 
+
 $(window).on("load resize ", function() {
   var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
   $('.tbl-header').css({'padding-right':scrollWidth});
 }).resize();
+
+
+ 
+  let medicines = [
+    
+    {name:'Biogesic',img:"home/photos/images (8).jpg",price: "$50"},
+    {name:'Biogesic-kid',img:"home/photos/images (10).jpg",price: "$70"},
+    {name:'WOOD',img:"home/photos/images (11).jpg",price: "$95"},
+    {name:'DECOLEN',img:"home/photos/bb2.jpg",price: "$45"},
+    {name:'EVENVON-C',img:"home/photos/e-c.jpg",price: "$60"},
+    {name:'Vicee',img:"home/photos/vicee.jpg",price: "$85"},
+    {name:'SOLMUX-KID',img:"home/photos/images (17).jpg",price: "$95"},
+    {name:'SOLMUX',img:"home/photos/product-5ef0eb6885efe.png",price: "$35"},
+ ]; 
+ medicineSearch(medicines)
+
+
+
+function medicineSearch(x){
+ 
+
+
+  $('#connn').empty();
+  x.map(product => {
+ $("#connn").append(` <div class="card wow animate__fadeInBottomBig" style="width: 200px;">
+  <div class="aa ">
+<a href="buy.html"><img src="${product.img}" alt="" class="medicine"></a>
+<div class="card-body d-flex justify-content-between align-items-center">
+  <div > <h4 class="h4namedd">${product.name}</h4>
+
+<div class="rating">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+
+</div>
+<p class="pprice">${product.price}</p></div>
+  
+<div class=""><button class="btn btn-primary bestbtn">Add</button></div>
+</div>
+</div>
+
+</div>`)
+  });
+  
+
+   
+
+
+ 
+};
+$('.search__input').on("keyup", function (){
+  let ketword = $(this).val().toLowerCase();
+  
+  let filterrr = medicines.filter(connn => {
+    if(connn.name.toLowerCase().indexOf(ketword) > -1){
+      return connn;
+    }
+    
+  })
+  medicineSearch(filterrr);
+
+})
+
+function total(){
+  $("#total").html($(".price").toArray().map(el=>el.innerHTML).reduce((x,y) => Number(x) + Number(y)));
+}
+ $('.shopp').click(function () {
+ $('.shop-area').toggle();
+ });
+
+ $("tbody").delegate("input","keyup change", function (){
+  let quantity = $(this).parentsUntil("tbody").find(".quantity").val();
+  let cost = $(this).parentsUntil("tbody").find(".cost").html();
+  let ff = $(this).parentsUntil("tbody").find(".price").html(cost * quantity);
+  total();
+});
+oi()
+function oi(){
+let sButton = document.getElementsByClassName("bestbtn");
+      for (let i = 0; i < sButton.length;i++){
+         
+        let button = sButton[i];
+        button.addEventListener("click", oo
+         
+       );
+      }
+
+
+}
+let cartNum = 1;
+
+
+  function cartShop1(x){
+        $('#cartShop').empty();
+        $('#cartShop').append(`<div class="pop">${x - 1}</div>`);
+  }
+
+function lastt(title,priced,photo,currcart){
+  
+  cartShop(currcart)
+  function cartShop(){
+        $('#cartShop').empty();
+        $('#cartShop').append(`<div class="pop">${currcart}</div>`);
+  }
+ 
+  addRow(title,priced,photo);
+      function addRow() {
+       
+  
+        $("#tti").append(`
+        <tr>
+            <td class="width-50">
+                <button class="btn btn-outline-primary del-btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </td>
+            <td class="width-300 font-weight-bold my-5">
+              <img src="${photo}" alt="" class="w-img" id="wood">
+                <p>${title}</p>
+            </td>
+            <td class="width-150 font-weight-bold my-5">
+              <p class="cost" id="50">${priced}</p>
+            </td>
+            <td class="width-150">
+                <input type="number" class="form-control text-right quantity"  value="0" min=0">
+            </td>
+            <td class="text-right">
+                <h4 class="mb-0 price">0</h4>
+            </td>
+        </tr>
+        `);
+  
+  
+  }
+  
+  }
+$("tbody").delegate(".del-btn","click",function () {
+
+
+ 
+  $(this).parentsUntil("tbody").remove();
+  cartNum--;
+  cartShop1(cartNum)
+  total();
+
+
+
+})
+        function oo(event){
+          
+   let buttonn = event.target
+   let buttonTarget = buttonn.parentElement.parentElement.parentElement
+   let title = buttonTarget.getElementsByClassName("h4namedd")[0].innerText
+   let price = buttonTarget.getElementsByClassName("pprice")[0].innerText
+   let priced = price.slice(1);
+   let photo = buttonTarget.getElementsByClassName("medicine")[0].src
+   let currcart = cartNum++;
+   console.log(currcart)
+   lastt(title,priced,photo,currcart)
+
+}
+
+ 
+
+
+
+
 
 
 

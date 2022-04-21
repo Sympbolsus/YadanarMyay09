@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="style.css">
+    
     
     <link
     rel="stylesheet"
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./home/vendor/slick/slick-theme.css">
      <link rel="stylesheet" href="./home/vendor/imagehover.css">
      <link rel="stylesheet" href="gg.css">
+     <link rel="stylesheet" href="style.css">
 </head>
 <body class="" >
   <div class="plane-con">
@@ -116,15 +117,18 @@
          <img src="home/photos/Artboard 2.png" alt="" class="Logoimg">
 
          
-         
-         <div class="ppp">
+         <div class="title-con">
+        <div class="ppp">
          <h1>YADANAR_</h1>
          <h2>MYAY</h2>
          </div>
-        
-         <div class="pp">
+          <div class="pp">
          <p >for your better life</p>
          </div>
+         </div>
+         
+        
+        
          <div class="p4">
           <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
             <svg width="50px" height="100" viewBox="0 0 100 100">
@@ -136,7 +140,52 @@
          </div>
          </div>
         
-         
+         <div class="shop-cart">
+
+          <div class="shop-area">
+            <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10">
+                      <div class="my-5">
+                          <h3 class="text-primary ">Add To Cart List</h3>
+                      </div>
+                      <div class="d-flex justify-content-between mb-3">
+                          <h4 class="mb-0">Your Product List</h4>
+                          
+                      </div>
+                      <table class="table table-bordered table-hover">
+                          <thead>
+                          <tr>
+                              <th class="text-center">#</th>
+                              <th>Product Name</th>
+                              <th class="text-right">Cost</th>
+                              <th class="text-right">Quantity</th>
+                              <th class="text-right">Price</th>
+                          </tr>
+                          </thead>
+                          <tbody id="tti">
+          
+          
+          
+          
+          
+                          </tbody>
+                          <tfoot>
+                          <tr>
+                              <td colspan="4" class="text-center">Total</td>
+                              <td class="text-right">
+                                  <h4 class="font-weight-bold mb-0" id="total">0</h4>
+                              </td>
+                          </tr>
+                          </tfoot>
+                      </table>
+                  </div>
+              </div>
+          </div>
+
+            </div>
+
+         </div>
          <div class="Social">
              <p class="ppppp"> - In us find </p>
              <i class="fa-brands fa-facebook" data-toggle="tooltip" data-placement="bottom" title="FACEBOOK"></i>
@@ -146,12 +195,15 @@
          </div>
          
           <div class="darkmode">
-          <div class="con-con">
-            <div class="search__container">
-              <input class="search__input" type="text" placeholder="Search">
-           </div>
-          </div>
+          
             <div class="line-h"></div>
+            <div class="cart-icn d-flex">
+              <div class=""><img src="home/photos/icons8-buying-48.png" alt=""></div>
+              <div id="cartShop">
+
+              </div>
+             
+            </div>
            <div class="dark-con">
              <i class="fa
              -solid fa-moon darkk animate__animated animate__swing animate__infinite	infinite animate__slow	2s" data-toggle="tooltip" data-placement="left" title="Dark mode"></i>
@@ -206,167 +258,108 @@
         <div class="container ">
             <div class="row">
                 <div class="col-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner w-100">
-                          <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="home/photos/ef50809c-1d71-4c18-841e-4b6d97994e26_1.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="3000">
-                            <img src="home/photos/15-12-21 (1).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item" data-bs-interval="3000">
-                            <img src="home/photos/download (1)qq.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                    <div class="eve-video slide">
+                      
+
+                        <video loop autoplay muted class="eve-v">
+                          <source src="home/photos/video_2022-04-21_22-37-05.mp4" type="video/mp4">
+                        </video>
+
+                      
+                     
+                        <video loop autoplay muted class="eve-v">
+                        <source src="home/photos/video_2022-04-21_22-37-05.mp4" type="video/mp4">
+                      </video>
+              
+                      
+                      
+                    </div> 
+                    <div class="can-rd">
+                      <p>CAN ORDER NOW</p>
+                      <button class="btn btn-warning">Order</button>
+                    </div>
+                         
+                       
                 </div>
             </div>
         </div>
+        <hr>
         <div class="hh1 wow animate__fadeInLeftBig">
           <h2>POPULAR NOW</h2>
           <i class="fa-solid fa-fire"></i>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="coloum-con wow animate__bounceInUp">
-       <div class="colume slide">
-         <div class="aa wow animate__bounceInUp">
-           <a href="buy.html"><img src="home/photos/images (8).jpg" alt="" class="medicine"></a>
-           <h4>Biogesic</h4>
-         
-         <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-         </div>
-         <p>$50.00</p>
-         </div>
-         <div class=" aa wow animate__bounceInUp">
-          <a href="buy.html"><img src="home/photos/images (10).jpg" alt="" class="medicine"></a>
-          <h4>Biogesic Kid</h4>
-        
-        <div class="rating">
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         
-        </div>
-        <p>$45.00</p>
-        </div>
-        <div class=" aa wow animate__bounceInUp">
-          <a href="buy.html"><img src="home/photos/images (11).jpg" alt="" class="medicine"></a>
-          <h4>WOOD</h4>
-        
-        <div class="rating">
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$68.00</p>
-        </div>
-        <div class=" aa wow animate__bounceInUp">
-          <a href="buy.html"><img src="home/photos/bb2.jpg" alt="" class="medicine"></a>
-          <h4>Decolgen</h4>
-        
-        <div class="rating">
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         
-        </div>
-        <p>$35.00</p>
-        </div>
 
-        <div class=" aa wow animate__bounceInUp">
-          <img src="home/photos/images (8).jpg" alt="" class="medicine">
-          <h4>Biogesic</h4>
-        
-        <div class="rating">
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star"></i>
-         <i class="fa-solid fa-star-half"></i>
-        </div>
-        <p>$50.00</p>
-        </div>
-        <div class="aa wow animate__bounceInUp">
-         <img src="home/photos/images (10).jpg" alt="" class="medicine">
-         <h4>Biogesic Kid</h4>
-       
-       <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        
-       </div>
-       <p>$45.00</p>
-       </div>
-       <div class="aa wow animate__bounceInUp">
-         <img src="home/photos/images (11).jpg" alt="" class="medicine">
-         <h4>WOOD</h4>
-       
-       <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-       </div>
-       <p>$68.00</p>
-       </div>
-       <div class="aa wow animate__bounceInUp">
-         <img src="home/photos/bb2.jpg" alt="" class="medicine">
-         <h4>Decolgen</h4>
-       
-       <div class="rating">
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        
-       </div>
-       <p>$35.00</p>
-       </div>
-        
-       </div>
-       </div>
+          <div class="cc">
+            <div class="search__container">
+              <input class="search__input" type="text" placeholder="Search">
+           </div>
           </div>
         </div>
-        
-       <div class="row nn">
-         <div class="col-12 col-md-6 col-lg-6 col-xl-3">
-              <div class="card casd">
-                <div class="card-body cast">
-                  <p>More-Detail WOOD</p>
-                  <i class="fa-solid fa-angles-right"></i>
-                  <div class="p-9">
-                     <h4>Best</h4>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde fugiat perspiciatis nemo architecto qui nostrum fuga debitis sapiente ipsa</p>
-                  </div>
-                </div>
-              </div>
+         <div class="container my-5">
+           <div class="row d-flex justify-content-center min-height-100">
+             <div class="col-12 h-100">
+               <div class="card-columns  connn" id="connn">
+                 
+               
+               
+               </div>
+             </div>
+           </div>
          </div>
-         
-     
+         <div class="container my-5 ">
+           <div class="row ">
+             <div class="col-12 ">
+               <div class="container">
+                 <div class="fffff slide">
+                   <div class="ffd">
+                  <div class="row align-items-center my-5 ">
+                 <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                   <img src="home/photos/images (16).jpg" alt="">
+                 </div>
+                 <div class="col-12 col-md-6 col-xl-6">
+                   <h4>OIOIANCAO</h4>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellendus fugit velit unde, doloremque earum, cumque eum non veniam ut p</p>
+                   <button class="btn btn-outline-warning">See More</button>
+                 </div>
+               </div>
+                   </div>
+                   <div class="ffd">
+                    <div class="row align-items-center my-5 ">
+                   <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                     <img src="home/photos/images (16).jpg" alt="">
+                   </div>
+                   <div class="col-12 col-md-6 col-xl-6">
+                     <h4>OIOIANCAO</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellendus fugit velit unde, doloremque earum, cumque eum non veniam ut p</p>
+                     <button class="btn btn-outline-warning">See More</button>
+                   </div>
+                 </div>
+                     </div>
+                     <div class="ffd">
+                      <div class="row align-items-center my-5 ">
+                     <div class="col-12 col-md-6 col-xl-6 d-flex justify-content-center">
+                       <img src="home/photos/images (16).jpg" alt="">
+                     </div>
+                     <div class="col-12 col-md-6 col-xl-6">
+                       <h4>OIOIANCAO</h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellendus fugit velit unde, doloremque earum, cumque eum non veniam ut p</p>
+                       <button class="btn btn-outline-warning">See More</button>
+                     </div>
+                   </div>
+                       </div>
+                  
+               
+            </div>
+               
+               
 
-       </div>
-       
+             
+             </div>
+             </div>
+             
+             
+           </div>
+         </div>
+         <hr>
     </section>
   </div>
   <div class="okie">
@@ -484,41 +477,7 @@
     </section>
   </div>
  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+ 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="home/vendor/wow/wow.js"></script>
@@ -526,8 +485,10 @@
     <script src="./home/vendor/way_point/jquery.waypoints.min.js"></script>
     <script src="./home/vendor/counter_up/counter_up.js"></script>
     <script src="./home/vendor/chart_js/Chart.min.js"></script>
+    <script src="charrt.js"></script>
     <script src="script.js"></script>
-   <script src="charrt.js"></script>
+
+   
     
     
     
